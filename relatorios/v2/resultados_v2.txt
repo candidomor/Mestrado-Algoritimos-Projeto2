@@ -1,0 +1,51 @@
+----- HARDWARE PROFILING -----
+OS System: Windows 11 (10.0.26200)
+Processor: Intel64 Family 6 Model 183 Stepping 1, GenuineIntel
+Physical Cores: 20
+Total Logical Cores: 28
+Total RAM: 63.83GB
+Available RAM: 34.58GB
+Python Version: 3.12.4
+-------------------------------
+
+====== CENÁRIO: Ordered (Crescente) ======
+ - Quantidade de Chaves Inseridas: 49093
+ - Quantidade de Buscas em Lote:   11000
+  [BST]
+    - Altura Alcançada: 16621 nós
+    - Tempo de Inserção: 11.5402s (±0.0916s spread)
+    - Tempo de Busca:    2.8354s (±0.0627s spread)
+    - Pico de Memória:   2.36MB (±0.00MB spread)
+  [AVL]
+    - Altura Alcançada: 16 nós
+    - Tempo de Inserção: 0.6550s (±0.0062s spread)
+    - Tempo de Busca:    0.0120s (±0.0005s spread)
+    - Pico de Memória:   2.35MB (±0.00MB spread)
+
+====== CENÁRIO: Shuffled (Aleatório) ======
+ - Quantidade de Chaves Inseridas: 49093
+ - Quantidade de Buscas em Lote:   11000
+  [BST]
+    - Altura Alcançada: 36 nós
+    - Tempo de Inserção: 0.0840s (±0.0021s spread)
+    - Tempo de Busca:    0.0129s (±0.0006s spread)
+    - Pico de Memória:   2.35MB (±0.00MB spread)
+  [AVL]
+    - Altura Alcançada: 18 nós
+    - Tempo de Inserção: 0.6382s (±0.0031s spread)
+    - Tempo de Busca:    0.0116s (±0.0004s spread)
+    - Pico de Memória:   2.35MB (±0.00MB spread)
+
+====== CENÁRIO: Reversed (Decrescente) ======
+ - Quantidade de Chaves Inseridas: 49093
+ - Quantidade de Buscas em Lote:   11000
+  [BST]
+    - Altura Alcançada: 17564 nós
+    - Tempo de Inserção: 8.3489s (±0.0437s spread)
+    - Tempo de Busca:    2.9333s (±0.0312s spread)
+    - Pico de Memória:   2.35MB (±0.00MB spread)
+  [AVL]
+    - Altura Alcançada: 16 nós
+    - Tempo de Inserção: 0.6051s (±0.0036s spread)
+    - Tempo de Busca:    0.0123s (±0.0009s spread)
+    - Pico de Memória:   2.35MB (±0.00MB spread)

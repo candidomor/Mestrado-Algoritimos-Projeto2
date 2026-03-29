@@ -1,0 +1,29 @@
+Banco de dados: C:\Users\Cândido Moreira\Dropbox\Mestrado Profissional\Matérias\Obrigatórias\Algoritmos e Programação\Projeto 02\wb_commodity_price_intelligence_1960_2026.csv
+
+
+Roteiro Geral
+1. Escrever rotinas para ler o arquivo e mapear os dados em uma Árvore Binária de Busca E AVL (com as características da base de dados). Vocês devem pensar na melhor forma de montar a estrutura de dados e o que carregar na estrutura.
+2. Escrever métodos buscar determinados atributos (chave). 
+3. Criar gráficos, tabelas ou outros recursos para demonstrar resultados comparativos de desempenho entre a Árvore Binária de Busca e AVL.
+4. Discutir e implementar como seria montada cada árvore com buscar feitas por outro campo que não seja a chave.
+
+
+Tarefa:
+
+Executar as tarefas abaixo, e montar um relatório (um arquivo para cada parte da tarefa)
+
+
+i) método: esclareça, por exemplo, tipo de equipamento utilizado, massa de dados, algoritmos utilizados, linguagem de programação, etc.
+
+ii) gráficos com as comparações de tempos medidos entre Árvore AVL e Árvore Binária de Busca para a BUSCA.
+
+iii) análise crítica sobre a eficiência dos algoritmo para inserção e para busca. (uma boa dica é verificar a altura das árvores geradas).
+
+iv) análise crítica sobre a análise assintótica e os tempos obtidos.
+
+v) Discussão de como seria montada cada árvore com buscar feitas por outro campo que não seja a chave.
+
+vi) Implementação de uma árvore com busca feita por outro campo que não seja a chave.
+
+
+

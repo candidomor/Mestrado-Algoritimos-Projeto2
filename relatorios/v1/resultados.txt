@@ -1,0 +1,6 @@
+
+    BST Height: 16621 | AVL Height: 16
+    BST Insert: 12.1035s | AVL Insert: 0.1861s
+    BST Search: 3.307245s | AVL Search: 0.013261s
+    BST Search by Attr: 0.0041s | AVL Search by Attr: 0.0091s
+    

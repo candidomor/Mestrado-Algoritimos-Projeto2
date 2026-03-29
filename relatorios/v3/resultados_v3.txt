@@ -1,0 +1,50 @@
+----- HARDWARE PROFILING (V3) -----
+OS System: Windows 11 (10.0.26200)
+Processor: Intel64 Family 6 Model 183 Stepping 1, GenuineIntel
+Physical Cores: 20
+Total Logical Cores: 28
+Total RAM: 63.83GB
+Available RAM: 34.31GB
+Execution Priority: Elevada (High Priority)
+Python Version: 3.12.4
+-----------------------------------
+
+
+==========================================================
+  ANÁLISE DE ESCALABILIDADE ASSINTÓTICA (Custo vs. Volume)
+==========================================================
+
+>>>> CENÁRIO: Ordered (Crescente) <<<<
+  | Vol (N)  |  BST Médio (s)  |  AVL Médio (s)  |
+  |----------|-----------------|-----------------|
+  | 10000    |  0.9379         |  0.0320         |
+  | 20000    |  3.4035         |  0.0729         |
+  | 30000    |  5.8161         |  0.1106         |
+  | 40000    |  8.1531         |  0.1490         |
+  | 49093    |  11.6013        |  0.1817         |
+
+>>>> CENÁRIO: Reversed (Decrescente) <<<<
+  | Vol (N)  |  BST Médio (s)  |  AVL Médio (s)  |
+  |----------|-----------------|-----------------|
+  | 10000    |  0.3526         |  0.0291         |
+  | 20000    |  1.0563         |  0.0598         |
+  | 30000    |  2.5905         |  0.0932         |
+  | 40000    |  5.4660         |  0.1344         |
+  | 49093    |  8.2966         |  0.1682         |
+
+>>>> CENÁRIO: Shuffled (Aleatório) <<<<
+  | Vol (N)  |  BST Médio (s)  |  AVL Médio (s)  |
+  |----------|-----------------|-----------------|
+  | 10000    |  0.0106         |  0.0333         |
+  | 20000    |  0.0218         |  0.0753         |
+  | 30000    |  0.0350         |  0.1185         |
+  | 40000    |  0.0528         |  0.1688         |
+  | 49093    |  0.0662         |  0.2080         |
+
+==========================================================
+  ISOLAMENTO PROCESSUAL (Multiprocessing VS Single-Thread)
+==========================================================
+ Teste: Dividir sub-árvores vs Construir Árvore Única (20000 itens Aleatórios)
+ -> Wall-Clock Single-Thread: 0.0224s
+ -> Wall-Clock Multi-Process (4 Nucléos Isolados): 0.4744s
+ O Multi-Processing economizou no tempo global real: -2016.3%

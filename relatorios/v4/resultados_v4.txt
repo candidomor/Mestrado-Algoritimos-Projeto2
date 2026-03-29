@@ -1,0 +1,46 @@
+----- HARDWARE PROFILING (V4 ULTRA-ISOLATED) -----
+OS System: Windows 11 (10.0.26200)
+Processor: Intel64 Family 6 Model 183 Stepping 1, GenuineIntel
+Physical Cores: 20
+Total Logical Cores: 28
+Total RAM: 63.83GB
+Available RAM: 37.72GB
+Execution Environment: HIGH PRIORITY | CPU AFFINITY CORE #0 | GC FREEZE ON 
+Python Version: 3.12.4
+--------------------------------------------------
+
+
+==========================================================
+  ANÁLISE BARE-METAL V4 (Exclusão do Context Switching OS)
+==========================================================
+ NOTA TÉCNICA: Os tempos abaixo representam a latência de 
+ processamento orgânico real do algoritmo despido do peso 
+ do Garbage Collector CPython e interferência do Windows.
+==========================================================
+
+>>>> CENÁRIO: Ordered (Crescente) <<<<
+  | Vol (N)  |  BST V4 (s)     |  AVL V4 (s)     |
+  |----------|-----------------|-----------------|
+  | 10000    |  0.9372         |  0.0319         |
+  | 20000    |  3.4833         |  0.0710         |
+  | 30000    |  5.8766         |  0.1094         |
+  | 40000    |  8.1855         |  0.1445         |
+  | 49093    |  11.7731        |  0.1791         |
+
+>>>> CENÁRIO: Reversed (Decrescente) <<<<
+  | Vol (N)  |  BST V4 (s)     |  AVL V4 (s)     |
+  |----------|-----------------|-----------------|
+  | 10000    |  0.3531         |  0.0285         |
+  | 20000    |  1.1017         |  0.0590         |
+  | 30000    |  2.7102         |  0.0915         |
+  | 40000    |  5.7416         |  0.1320         |
+  | 49093    |  8.7289         |  0.1630         |
+
+>>>> CENÁRIO: Shuffled (Aleatório) <<<<
+  | Vol (N)  |  BST V4 (s)     |  AVL V4 (s)     |
+  |----------|-----------------|-----------------|
+  | 10000    |  0.0096         |  0.0334         |
+  | 20000    |  0.0221         |  0.0729         |
+  | 30000    |  0.0349         |  0.1160         |
+  | 40000    |  0.0525         |  0.1587         |
+  | 49093    |  0.0634         |  0.2083         |
