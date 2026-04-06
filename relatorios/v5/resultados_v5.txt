@@ -8,11 +8,6 @@ Execution Priority: Elevada (High Priority)
 Python Version: 3.12.4
 --------------------------------------------------
 
-
-==========================================================
-  O PARADOXO DO PARALELISMO MATRICIAL (Pickle IPC Delay)
-==========================================================
-
 >>>> CENÁRIO: Ordered (Crescente) <<<<
   | Vol (N)  | BST ST(s) | BST MP 4-Cores | Atraso BST MP % | AVL ST(s) | AVL MP 4-Cores | Atraso AVL MP % |
   |----------|-----------|----------------|-----------------|-----------|----------------|-----------------|
